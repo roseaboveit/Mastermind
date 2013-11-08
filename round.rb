@@ -1,6 +1,6 @@
 # This should evaluate the guts of the round.
-#require './player.rb'
-#require './mastermind.rb'
+require './player.rb'
+require './mastermind.rb'
 
 class Round
 
@@ -34,7 +34,6 @@ class Round
         if @code_hash[color] != 0
           @white += 1
           @code_hash[color] -= 1
-          puts @code_hash
         end
       end
     end
@@ -46,7 +45,6 @@ class Round
     @index_a.each do |i|
       if @guess[i] == @code[i]
         @red += 1
-        puts @code_hash
       end
     end
     @red
@@ -58,5 +56,4 @@ class Round
     @guess = @guesser.guess
     evaluate_guess
   end
-  
 end

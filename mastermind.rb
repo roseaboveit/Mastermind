@@ -1,6 +1,7 @@
 #This should be the file that is called to run the core of the game.
-#require './player.rb'
-#require './round.rb'
+require './player.rb'
+require './round.rb'
+
 class Game
 
   def initialize
